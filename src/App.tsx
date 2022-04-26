@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Clock from "./feathers/Clock";
+import "./app.scss"
 
 function App() {
+  const arr = Array.from({ length: 10 }, (_, i) => i + 1);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {arr.map((_, index) => (
+        <Clock key={index} diff={index} />
+      ))}
     </div>
   );
 }

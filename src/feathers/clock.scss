@@ -1,0 +1,23 @@
+.clock {
+  border: 2px solid #ccc;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hand {
+  position: absolute;
+  display: grid;
+  height: 100%;
+  transform-origin: center;
+}
+.visible-half {
+  border: 2px solid #ccc;
+}
+.diff{
+//   align-self: flex-end;
+//   justify-self: flex-end;
+}
